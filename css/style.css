@@ -29,3 +29,13 @@ body {
 .macbook{
     width: 500px;
 }
+
+.development-icon{
+    width: 80px;
+    height: 80px;
+}
+
+.check-icon{
+    width: 60px;
+    height: 60px;
+}
