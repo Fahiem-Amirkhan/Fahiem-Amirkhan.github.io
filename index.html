@@ -10,7 +10,10 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Portfolio Fahiem</title>
 </head>
@@ -26,13 +29,18 @@
                 </div>
 
                 <div class="col-12 col-md-5 d-md-flex justify-content-center align-items-center mt-2 mt-md-0">
-                    <div class="d-md-none">
-                        <button class="navbar-toggler bg-info" type="button" data-toggle="collapse"
+                    <div class="d-md-none d-flex justify-content-end">
+                        <button class="navbar-toggler navbar bg-dark btn-info" type="button" data-toggle="collapse"
                             data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
                             aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="cyan" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5">
+                                </path>
+                            </svg>
                         </button>
                     </div>
+
                     <div class="collapse navbar-collapse d-md-flex flex-md-row" id="navbarContent">
                         <a href="#home" class="btn btn-info bg-dark text-white my-1 my-md-0">Home</a>
                         &nbsp;&nbsp;&nbsp;&nbsp;
@@ -42,13 +50,13 @@
                         &nbsp;&nbsp;&nbsp;&nbsp;
                         <a href="#projects" class="btn btn-info bg-dark text-white my-1 my-md-0">Projects</a>
                         &nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="#portfolio" class="btn btn-info bg-dark text-white my-1 my-md-0">PortFolio</a>
+                        <a href="#portfolio" class="btn btn-info bg-dark text-white my-1 my-md-0">Portfolio</a>
                         &nbsp;&nbsp;&nbsp;&nbsp;
                         <a href="#information" class="btn btn-info bg-dark text-white my-1 my-md-0">Info</a>
                     </div>
                 </div>
 
-                <div class="col-6 col-md d-flex justify-content-center align-items-center mt-2 mt-md-0">
+                <div class="col-6 col-md d-flex justify-content-center mt-2 mt-md-0">
                     <a href="https://www.instagram.com/mfa_2004_/?next=%2F" class="mx-1 social-media">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-instagram"
                             viewBox="0 0 16 16">
@@ -72,9 +80,13 @@
                         </svg>
                     </a>
                 </div>
+                <div class="container-fluid p-1 bg-dark">
+                    <div class="row">
+                        <div class="col-6 col-md d-flex justify-content-center mt-2 mt-md-0"></div>
+                    </div>
+                </div>
             </div>
         </div>
-
 
         <div class="container-fluid">
             <div class="row">
@@ -84,10 +96,11 @@
                             <img src="img/Background.webp" class="d-flex w-100 background-name" alt="tech">
                         </div>
                         <div class="position-absolute w-100 h-100 bg-dark"></div>
-                        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                        <div
+                            class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
                             <div class="text-center">
                                 <p class="text-white">Welcome to my portfolio</p>
-                                <h4 class="text-white">I am Fahiem Amirkhan. <br>Transforming ideas into innovative
+                                <h4 class="text-white">I am Fahiem Amirkhan. <br><br>Transforming ideas into innovative
                                     software solutions as a passionate software developer in training.</h4>
                             </div>
                         </div>
@@ -683,10 +696,19 @@
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body bg-dark text-white text-center">
-                                        <p>This is a website where you can shop for some designer shoes or
-                                            t-shirts. I have made this website with my friend and it is made with
-                                            HTML-CSS / Javascript /
-                                            Node.js. <br> Enjoy!
+                                        <h4 class="fw-bold">Technics:</h4>
+                                        <p>I created a web catalog website as a project with a classmate, using HTML and
+                                            CSS. The development process was smooth, without encountering any
+                                            significant challenges.</p>
+                                    </div>
+                                    <div class="modal-body bg-dark text-white text-center">
+                                        <h4 class="fw-bold">Description:</h4>
+                                        <p>
+                                            Welcome to our online platform dedicated to fashion enthusiasts! Indulge in
+                                            our exquisite selection of designer shoes and trendy t-shirts, meticulously
+                                            curated to elevate your wardrobe. Discover the perfect blend of style and
+                                            quality as you browse through our exclusive offerings. Begin your fashion
+                                            journey with us and experience the essence of chic sophistication.
                                         </p>
                                     </div>
                                     <div class="modal-footer bg-dark">
@@ -721,10 +743,20 @@
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body bg-dark text-white text-center">
-                                        <p>This is a website where you can shop for some designer shoes or
-                                            t-shirts. I have made this website with my friend and it is made with
-                                            HTML-CSS / Javascript /
-                                            Node.js. <br> Enjoy!
+                                        <h4 class="fw-bold">Technics:</h4>
+                                        <p>This is a dashboard site we developed as a team of three. Built using
+                                            Bootstrap, JavaScript, and server integration, the development process was
+                                            smooth, with no significant issues encountered.
+                                        <p>
+                                    </div>
+                                    <div class="modal-body bg-dark text-white text-center">
+                                        <h4 class="fw-bold">Description:</h4>
+                                        <p>
+                                            Welcome to our online platform dedicated to fashion enthusiasts! Indulge in
+                                            our exquisite selection of designer shoes and trendy t-shirts, meticulously
+                                            curated to elevate your wardrobe. Discover the perfect blend of style and
+                                            quality as you browse through our exclusive offerings. Begin your fashion
+                                            journey with us and experience the essence of chic sophistication.
                                         </p>
                                     </div>
                                     <div class="modal-footer bg-dark">
